@@ -1,4 +1,6 @@
  Diabetes Prediction:
+This project demonstrates that machine learning models can predict diabetes with reasonable accuracy using health data features.
+Among the models tested, Random Forest showed strong performance. Further improvements such as feature scaling, cross-validation, and detailed evaluation metrics could enhance the robustness of predictions. This forms a solid foundation for developing a more advanced and clinically useful diabetes prediction tool
 
 Tools Used:  
 •	Python libraries:
@@ -8,29 +10,3 @@ Tools Used:
 •	Matplotlib (optional): for additional plotting or visualization needs.
 
 
-Working Procedure: 
-•	Load and inspect data: 
-•	Use “pandas.read_csv” to load data and inspect its structure, column type and data records.
-•	Previous data:
-- Removed “smoking_history” row to simplify data.
- Used to encode gender field as a number (Example = 0, Male = 1, Other = 2).
-- Split dataset into features (“x”) and targets (“y”).
-•	 Training-Test Split:
-•	Use “train_test_split” to split data into training and testing; 80% for training and 20% for testing.
-•	Training and testing models:
-•	Used models:
-- Naive Bayes (GaussianNB): a simple probabilistic classifier.
-- Support Vector Machine (SVM): Robust classifier for binary data.
-- Random Forest: Ensemble method for improved accuracy.  
-•	Evaluated models using metrics like accuracy, confusion matrix, and 
-distribution maps.
-•	Visualization: 
-•	Plot heatmaps of confusion matrices using seaborn to gain insight into 
-performance patterns.
-
-Learning Outcomes: 
-•	Learn how to pre-process data, including entering categorical variables and dealing with redundant rows. 
-•	Gain experience with train-test separation and selecting a size test. 
-•	Explore and compare different learning models. 
-•	 Learn how to use uncertainty matrices, accuracy, and other metrics to evaluate model performance. 
-•	Advanced intelligence to visualize performance metrics for better translation.
